@@ -98,7 +98,7 @@ function current_pwd {
 }
 
 function set_prompt {
-    local PROMPT="$COLOR_GREEN\u$COLOR_LIGHT_WHITE at $COLOR_LIGHT_BLUE\h$COLOR_LIGHT_WHITE in $COLOR_YELLOW\W$COLOR_NC$(git_prompt_string)\n$(prompt_char) "
+    local PROMPT="$COLOR_GREEN\u$COLOR_LIGHT_WHITE at $COLOR_LIGHT_BLUE\h$COLOR_LIGHT_WHITE in $COLOR_YELLOW\W$COLOR_NC$(git_prompt_string)$COLOR_NC\n$(prompt_char) "
     export PS1=$PROMPT
 }
 PROMPT_COMMAND='set_prompt'
