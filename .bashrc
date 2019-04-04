@@ -1,5 +1,4 @@
 source ~/.bash/colors.sh
-source /usr/local/etc/bash_completion.d/git-prompt.sh
 
 function virtualenv_info {
     [ $VIRTUAL_ENV ] && echo '('`basename $VIRTUAL_ENV`') '
