@@ -67,10 +67,9 @@ function parse_git_state() {
   fi
 
   if [[ -n $GIT_STATE ]]; then
-    GITSTATE=$GIT_PROMPT_PREFIX$GIT_STATE$GIT_PROMPT_SUFFIX
+    echo "$GIT_PROMPT_PREFIX$GIT_STATE$GIT_PROMPT_SUFFIX"
   fi
 
-  echo $GITSTATE
 }
 
 # If inside a Git repository, print its branch and state
